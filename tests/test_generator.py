@@ -18,3 +18,8 @@ def test_sample_multiple_words():
 def test_generate_buzz_of_at_least_five_words():
     phrase = generator.generate_buzz()
     assert len(phrase.split()) >= 5
+
+def test_sample_single_word2():
+    l = ('foo', 'bar', 'foobar','raj')
+    word = generator.sample(l)
+    assert word in l
